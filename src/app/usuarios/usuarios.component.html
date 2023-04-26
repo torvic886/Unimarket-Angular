@@ -1,1 +1,28 @@
-<p>usuarios works!</p>
+<div class="container">
+<h1>{{titulo}}</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id Usuario</th>
+        <th scope="col">Nombre Completo</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Email</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Contraseña</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <th scope="row">{{usuario.idUsuario}}</th>
+        <td>{{usuario.nombreCompleto}}</td>
+        <td>{{usuario.cedula}}</td>
+        <td>{{usuario.email}}</td>
+        <td>{{usuario.telefono}}</td>
+        <td>{{usuario.direccion}}</td>
+        <td>{{usuario.contrasena}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,6 +1,7 @@
 import { Categoria } from "./Categoria";
 import { EstadoProducto } from "./EstadoProducto";
-import { Usuario } from "./usuario";
+import { Usuario } from '../Interfaces/Usuario';
+
 
 export interface Producto {
     id_producto: number;
