@@ -1,6 +1,6 @@
 export interface Usuario {
-    id_usuario: number;
-    nombre_completo: string;
+    idUsuario: number;
+    nombreCompleto: string;
     cedula: string;
     email: string;
     telefono: string;
