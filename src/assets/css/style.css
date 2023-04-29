@@ -66,7 +66,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   overflow-x: hidden;
-  color: #67757c;
+  color: #000000;
   font-weight: 300; }
 
 html {
@@ -348,7 +348,7 @@ Opacity
 font weight
 *******************/
 html body .font-bold {
-  font-weight: 700; }
+  font-weight: 900; }
 
 html body .font-normal {
   font-weight: normal; }
