@@ -8,6 +8,7 @@ import { Usuario } from '../Interfaces/Usuario';
   providedIn: 'root',
 })
 export class UsuarioService {
+  
   private url: string = 'http://localhost:8080/api/v1/Usuarios';
 
   constructor(private http: HttpClient) {}
