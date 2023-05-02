@@ -28,6 +28,7 @@ Login register and recover password Page
     position: fixed; }
   
   .login-box {
+    background-color: black;
     width: 400px;
     margin: 0 auto; }
     .login-box .footer {
