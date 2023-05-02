@@ -3,24 +3,29 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Id Producto</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Descripcion</th>
-      <th scope="col">Precio</th>
-      <th scope="col">Disponibilidad</th>
-      <th scope="col">Fecha</th>
-      <th scope="col">Estado</th>
+      <th scope="col" style="font-size: 18px;">Id Producto</th>
+      <th scope="col" style="font-size: 18px;">Nombre</th>
+      <th scope="col" style="font-size: 18px;">Descripcion</th>
+      <th scope="col" style="font-size: 18px;">Precio</th>
+      <th scope="col" style="font-size: 18px;">Disponibilidad</th>
+      <th scope="col" style="font-size: 18px;">Fecha</th>
+      <th scope="col" style="font-size: 18px;">Estado</th>
+      <th scope="col" style="font-size: 18px;">Edit/Del</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let producto of productos">
-      <th style="text-align: center" scope="row">{{producto.idProducto}}</th>
-      <td>{{producto.nombre}}</td>
-      <td>{{producto.descripcion}}</td>
-      <td>{{producto.precio}}</td>
-      <td style="text-align: center">{{producto.disponibilidad}}</td>
-      <td>{{producto.fechaLimite}}</td>
-      <td>{{producto.estado}}</td>
+      <th style="text-align: center; font-size: 20px;" scope="row">{{producto.idProducto}}</th>
+      <td style="font-size: 20px;">{{producto.nombre}}</td>
+      <td style="font-size: 20px;">{{producto.descripcion}}</td>
+      <td style="font-size: 20px;">{{producto.precio}}</td>
+      <td style="text-align: center; font-size: 20px;">{{producto.disponibilidad}}</td>
+      <td style="font-size: 20px;">{{producto.fechaLimite}}</td>
+      <td style="font-size: 20px;">{{producto.estado}}</td>
+      <td>
+        <button type="button" class="btn btn-danger" ><i class="fa fa-trash" ></i></button>
+        <button type="button" class="btn btn-primary" [routerLink]="['/usuario/form']"><i class="fa fa-edit"></i></button>
+      </td>
     </tr>
   </tbody>
 </table>

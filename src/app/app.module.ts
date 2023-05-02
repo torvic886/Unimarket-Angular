@@ -14,6 +14,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { FormUsuarioComponent } from './components/form-usuario/form-usuario.component';
+import { FormsModule } from '@angular/forms';
+import { PagesComponent } from './pages/pages.component';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +30,15 @@ import { HeaderComponent } from './shared/header/header.component';
     DashboardComponent,
     BreadcrumbsComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormUsuarioComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   bootstrap: [AppComponent]
