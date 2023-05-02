@@ -16,7 +16,7 @@ const routes: Routes = [
     //path: '/auth' AuthRoutingModule
     //path: '/medicos' MedicosRoutingModule
     //path: '/compras' ComprasRoutingModule
-
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     { path: '**', component: NopagefoundComponent},
 ];
 

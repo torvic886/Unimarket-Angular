@@ -10,14 +10,13 @@ import { FormUsuarioComponent } from '../components/form-usuario/form-usuario.co
 
 const routes: Routes = [
     { 
-        path: '', 
+        path: 'dashboard', 
         component: PagesComponent,
         children : [
-          { path: 'dashboard', component: DashboardComponent},
+          { path: '', component: DashboardComponent},
           { path: 'usuario', component: UsuariosComponent},
           { path: 'producto', component: ProductosComponent},
           { path: 'usuario/form', component: FormUsuarioComponent},
-          { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
         ]
       },
 
