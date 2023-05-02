@@ -18,8 +18,8 @@ const routes: Routes = [
       children : [
         { path: 'dashboard', component: DashboardComponent},
         { path: 'usuario', component: UsuariosComponent},
-        { path: 'usuario/form', component: FormUsuarioComponent},
         { path: 'producto', component: ProductosComponent},
+        { path: 'usuario/form', component: FormUsuarioComponent},
         { path: '', redirectTo: '/dashboard', pathMatch: 'full'},
       ]
     },
